@@ -1,0 +1,25 @@
+[
+
+
+
+{
+  proverb: " ",
+  mean: " ",
+  description: " ",
+  irony: " ",
+  reference: {
+    writer: " ",
+    book: " "
+  },
+  words: [
+    " ",
+  ],
+  p_equal: " ",
+  subjects: [
+    " ",
+  ]
+},
+
+
+
+]
