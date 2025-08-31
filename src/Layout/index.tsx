@@ -1,21 +1,18 @@
 import React from "react";
-// mx-10
+
+import Header from "./Header";
 
 const styles = {
   root: `
-    h-screen
     border border-red-600
-    pt-12
+    pt-3
     max-w-[1280px]
     w-full
     mx-auto
-  `,
-  header: `
-    flex justify-between
-  `,
+    `,
 };
 
-export default function Layout() {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div
       className={styles.root}
@@ -23,17 +20,8 @@ export default function Layout() {
         direction: "rtl",
       }}
     >
-      <header className={styles.header}>
-        <div>
-          <span>خانه</span>
-          <span>زبانزد 1-100</span>
-          <span>زبانزد 1-200</span>
-          <span>درباره ی ما</span>
-          <span>ارتباط یا ما</span>
-        </div>
-        <div></div>
-      </header>
-      <main></main>
+      <Header />
+      <main>{children}</main>
       <footer></footer>
     </div>
   );
