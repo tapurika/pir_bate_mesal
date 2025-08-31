@@ -31,7 +31,7 @@ export default function Footer() {
             className="w-[130px]"
             alt="تپوریکا"
           />
-          <h6 className="flex flex-col gap-3 font-iranYekan-800 text-3xl text-[22px]">
+          <h6 className="flex flex-col gap-3 font-iranYekan-800 text-3xl text-[22px] ">
             <span>تپوریکا</span>
             <span>tapurika</span>
           </h6>
