@@ -2,6 +2,7 @@ import React from "react";
 import HeroSection from "./HeroSection";
 import WriterSection from "./WriterSection";
 import ProverbSection from "./ProverbSection";
+import ProverbExplain from "./ProverbExplain";
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <HeroSection />
       <WriterSection />
       <ProverbSection />
+      <ProverbExplain />
     </div>
   );
 }

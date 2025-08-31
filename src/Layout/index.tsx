@@ -1,15 +1,14 @@
 import React from "react";
 
 import Header from "./Header";
+import Footer from "./Footer";
 
 const styles = {
   root: `
     border border-red-600
     pt-3
-    max-w-[1280px]
-    w-full
-    mx-auto
-    `,
+    
+  `,
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -22,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     >
       <Header />
       <main>{children}</main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }

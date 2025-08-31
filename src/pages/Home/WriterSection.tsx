@@ -15,7 +15,7 @@ const styles = {
 export default function WriterSection() {
   return (
     <div>
-      <div className={styles.root}>
+      <div className={styles.root + " wrapper"}>
         <div className={styles.text}>
           <h3 className="block text-2xl font-bold">
             {" "}
@@ -35,7 +35,7 @@ export default function WriterSection() {
           <img
             // className="w-2xs"
             className="absolute top-[-70px] left-0"
-            src="/public/images/writer-1.jpg"
+            src="/images/writer-1.jpg"
             alt="غلام حسین باقری آلاشتی سوادکوهی"
           />
         </div>

@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { LINKS } from "./constants";
 
 const styles = {
   header: `
@@ -15,40 +16,9 @@ const styles = {
   `,
 };
 
-const LINKS = [
-  {
-    text: "خانه",
-    to: "",
-  },
-  {
-    text: "زبانزد 1-100",
-    to: "1-100",
-  },
-  {
-    text: "زبانزد 1-200",
-    to: "101-200",
-  },
-  {
-    text: "نویسنده",
-    to: "writer",
-  },
-  {
-    text: "درباره ی ما",
-    to: "about-us",
-  },
-  {
-    text: "ارتباط با ما",
-    to: "contact-us",
-  },
-  // {
-  //   text: "",
-  //   to: "",
-  // },
-];
-
 export default function Header() {
   return (
-    <header className={styles.header}>
+    <header className={styles.header + " wrapper"}>
       <div className={styles.linkBox}>
         {LINKS.map((data) => {
           return (
@@ -61,7 +31,7 @@ export default function Header() {
       <div className={styles.logBox}>
         <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
         <img
-          src="/public/images/oldman-header.png"
+          src="/images/oldman-header.png"
           alt="پیربته مثال"
           style={{
             width: 75,

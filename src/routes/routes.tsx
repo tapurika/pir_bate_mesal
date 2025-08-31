@@ -9,3 +9,5 @@ const ROUTES = [
     path: null,
   },
 ];
+
+export default ROUTES;

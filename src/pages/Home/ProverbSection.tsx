@@ -7,7 +7,7 @@ const styles = {
     mt-32
   `,
   cardWrapper: `
-    border
+    
     flex justify-evenly flex-wrap
     gap-7
   `,
@@ -15,7 +15,7 @@ const styles = {
 
 export default function ProverbSection() {
   return (
-    <div className={styles.root}>
+    <div className={styles.root + " wrapper"}>
       <h2 className="font-iranYekan-500 text-3xl">
         چند نمونه از
         <strong className="text-green-600"> پیر بته مثال های </strong>

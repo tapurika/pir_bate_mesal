@@ -24,9 +24,9 @@ const styles = {
 
 export default function HeroSection() {
   return (
-    <div className={styles.root}>
+    <div className={styles.root + " wrapper"}>
       <section className={styles.rSection}>
-        <img src="/public/images/tabari.jpg" alt="" className={styles.img} />
+        <img src="/images/tabari.jpg" alt="" className={styles.img} />
       </section>
       <section className={styles.lSection}>
         <h1

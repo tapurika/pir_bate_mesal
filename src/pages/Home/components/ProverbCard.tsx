@@ -23,18 +23,23 @@ export default function ProverbCard({
     <div className={styles.root}>
       <div>
         <div>
-          <h5 className="font-iranYekan-600 mb-2 text-[22px] tracking-tight text-gray-900 dark:text-white">
+          <h5 className="font-iranYekan-500 mb-2 text-[22px] tracking-tight text-gray-900 dark:text-white">
+            <strong className="pl-2.5 text-green-600 font-iranYekan-800 font-extrabold">
+              زبانزد:{" "}
+            </strong>
+
             {proverb}
           </h5>
         </div>
-        <p className="font-iranYekan-400 mb-3 font-normal text-gray-700 dark:text-gray-400">
-          معنی: {mean}
+        <p className="font-iranYekan-400 mb-3 font-normal text-gray-700 dark:text-gray-400 ">
+          <strong className="pl-1">معنی: </strong>
+          {mean}
         </p>
-        <p className="font-iranYekan-400 mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {irony}
+        <p className="font-iranYekan-400 mb-3 font-normal text-gray-700 dark:text-gray-400 ">
+          <strong className="pl-1">کنایه از: </strong> {irony}
         </p>
       </div>
-      <div className="mt-4">
+      <div className="mt-4 flex justify-end">
         <a className="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-700">
           بیشتر بخوانید
           <svg
@@ -46,9 +51,9 @@ export default function ProverbCard({
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
