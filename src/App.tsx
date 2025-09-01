@@ -1,11 +1,7 @@
-import Layout from "@/Layout";
-import HomePage from "./pages/Home";
+import Router from "@/routes";
+
 function App() {
-  return (
-    <Layout>
-      <HomePage />
-    </Layout>
-  );
+  return <Router />;
 }
 
 export default App;

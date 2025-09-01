@@ -1,5 +1,5 @@
 import React from "react";
-import { LINKS } from "./constants";
+import { LINKS } from "./constant";
 import { Link } from "react-router";
 
 import { FaGithub, FaInstagram } from "react-icons/fa";

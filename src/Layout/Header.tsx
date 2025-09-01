@@ -1,18 +1,19 @@
 import { Link } from "react-router";
-import { LINKS } from "./constants";
+import { LINKS } from "./constant";
+import LinksBox from "./LinksBox";
 
 const styles = {
   header: `
     flex justify-between items-center
-    border border-red-500
+    //border //border-red-500
     font-iranYekan-600
   `,
   linkBox: `
-    flex gap-10
+    flex items-center gap-10 
   `,
   logBox: `
     flex items-center gap-4
-    border
+    //border
   `,
 };
 
@@ -21,7 +22,15 @@ export default function Header() {
     <header className={styles.header + " wrapper"}>
       <div className={styles.linkBox}>
         {LINKS.map((data) => {
-          return (
+          return data.toList ? (
+            <LinksBox
+              key={data.to}
+              text={"زبانزد " + data.text}
+              preLink={data.to}
+              content={data.toList}
+              css={data.css}
+            />
+          ) : (
             <Link key={data.to} to={"/" + data.to}>
               {data.text}
             </Link>

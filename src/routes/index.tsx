@@ -1,35 +1,21 @@
 import { Routes, Route } from "react-router";
 
-import Layout from "@/layout";
-import AuthPage from "@/pages/auth";
-import { PANEL_ROUTES } from "./routes";
+import Layout from "@/Layout/index";
+// import AuthPage from "@/pages/auth";
+import ROUTES from "./routes";
 
 export default function AppRoutes() {
-  const isAuth = false;
-
-  return isAuth ? <AuthRoute /> : <PanelRoutes />;
-
-  // <Routes>
-  //   {/* {isAuth ? <AuthRoute /> : <PanelRoutes />} */}
-  //   {/* <Route path="panel/auth" element={<AuthPage />} /> */}
-  //   <AuthRoute />
-  // </Routes>
-}
-
-const AuthRoute = () => (
-  <Routes>
-    <Route path="panel/auth" element={<AuthPage />} />
-  </Routes>
-);
-
-function PanelRoutes() {
   return (
     <Routes>
-      {PANEL_ROUTES.map(({ subRoute, index, path, Element }) => {
+      {ROUTES.map(({ subRoute, index, path, Element }) => {
         return (
-          <Route path="panel" element={<Layout />}>
+          <Route element={<Layout />}>
             {subRoute ? (
-              <Route path={path} element={Element ? <Element /> : undefined}>
+              <Route
+                path={path}
+                index={index}
+                element={Element ? <Element /> : undefined}
+              >
                 {subRoute.map((data) => (
                   <Route
                     index={data.index}

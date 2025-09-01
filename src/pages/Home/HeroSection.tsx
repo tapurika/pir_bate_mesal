@@ -1,11 +1,10 @@
-import ColorfulButton from "@/components/Button/ColorfulButton";
-import React from "react";
 import { Link } from "react-router";
+import ColorfulButton from "@/components/Button/ColorfulButton";
 
 const styles = {
   root: `
     flex justify-between
-    border
+    //border
 
     pt-30
   `,

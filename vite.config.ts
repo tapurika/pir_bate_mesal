@@ -5,14 +5,12 @@ import path from "path"; // Import the path module
 
 // import tsconfigPaths from "vite-tsconfig-paths";
 // import { reactRouter } from "@react-router/dev/vite";
+import flowbiteReact from "flowbite-react/plugin/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(),
-    // reactRouter(), tsconfigPaths()
-  ],
+  plugins: [react(), // reactRouter(), tsconfigPaths()
+  tailwindcss(), flowbiteReact()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"), // '@' now represents the 'src' directory
