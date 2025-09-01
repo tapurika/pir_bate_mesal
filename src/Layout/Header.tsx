@@ -28,7 +28,7 @@ export default function Header() {
               text={"زبانزد " + data.text}
               preLink={data.to}
               content={data.toList}
-              css={data.css}
+              css={data?.css}
             />
           ) : (
             <Link key={data.to} to={"/" + data.to}>
