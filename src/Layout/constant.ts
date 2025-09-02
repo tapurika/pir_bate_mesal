@@ -4,6 +4,14 @@ import { TfiWrite } from "react-icons/tfi";
 import { FaUser } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 
+interface ILinks {
+  text: string;
+  to: string;
+  Icon: React.FC;
+  css?: string;
+  toList?: string[];
+}
+
 export const LINKS_1_500 = {
   text: "1-500",
   to: "1-500-proverb/",
@@ -22,7 +30,7 @@ export const LINKS_1_500 = {
   ],
 };
 
-export const LINKS = [
+export const LINKS: ILinks[] = [
   {
     text: "خانه",
     to: "",

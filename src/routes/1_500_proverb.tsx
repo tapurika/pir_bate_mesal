@@ -21,49 +21,23 @@ const PROVERB_1_500_ROUTES =
       {
         index: true,
         Element: ProverbPage_1,
+        path: "",
       },
       {
         Element: ProverbPage_1_20,
         path: "1-20",
       },
-      {
-        Element: ProverbPage_21_40,
-        path: "21-40",
-      },
-      {
-        Element: ProverbPage_41_60,
-        path: "41-60",
-      },
-      {
-        Element: ProverbPage_61_80,
-        path: "61-80",
-      },
-      {
-        Element: ProverbPage_81_100,
-        path: "81-100",
-      },
+      { Element: ProverbPage_21_40, path: "21-40" },
+      { Element: ProverbPage_41_60, path: "41-60" },
+      { Element: ProverbPage_61_80, path: "61-80" },
+      { Element: ProverbPage_81_100, path: "81-100" },
 
       // 101 - 200 proverb
-      {
-        Element: ProverbPage_101_200,
-        path: "101-120",
-      },
-      {
-        Element: ProverbPage_121_140,
-        path: "121-140",
-      },
-      {
-        Element: ProverbPage_141_160,
-        path: "141-160",
-      },
-      {
-        Element: ProverbPage_161_180,
-        path: "161-180",
-      },
-      {
-        Element: ProverbPage_181_200,
-        path: "181-200",
-      },
+      { Element: ProverbPage_101_200, path: "101-120" },
+      { Element: ProverbPage_121_140, path: "121-140" },
+      { Element: ProverbPage_141_160, path: "141-160" },
+      { Element: ProverbPage_161_180, path: "161-180" },
+      { Element: ProverbPage_181_200, path: "181-200" },
     ],
   };
 

@@ -14,7 +14,11 @@ export default function TextBox({
     >
       {Array.isArray(text) ? (
         text.map((data) => {
-          return <span className={"block min-h-2"}>{data}</span>;
+          return (
+            <span key={"31" + text} className={"block min-h-2"}>
+              {data}
+            </span>
+          );
         })
       ) : (
         <span className={"block"}>{text}</span>

@@ -1,7 +1,14 @@
 import HomePage from "@/pages/Home";
 import PROVERB_1_500_ROUTES from "./1_500_proverb";
 
-const ROUTES = [
+interface IRoutes {
+  index?: boolean;
+  path: string;
+  Element?: React.FC;
+  subRoute?: { index?: boolean; path: string; Element: React.FC }[];
+}
+
+const ROUTES: IRoutes[] = [
   {
     index: true,
     Element: HomePage,

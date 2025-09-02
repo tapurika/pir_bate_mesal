@@ -48,7 +48,7 @@ export function MenuDrawer() {
                       {data.toList.map((text) => (
                         <Link
                           key={text}
-                          className="flex item-center gap-2.5 dark:text-gray-400"
+                          className="flex item-center gap-2.5 text-gray-500 dark:text-gray-400 "
                           to={"/" + data.to + text}
                         >
                           <data.Icon />
@@ -60,7 +60,7 @@ export function MenuDrawer() {
                 ) : (
                   <Link
                     key={data.text}
-                    className="flex item-center gap-2.5 py-3 ps-5 dark:text-gray-400 "
+                    className="flex item-center gap-2.5 py-3 ps-5 text-gray-500 dark:text-gray-400 "
                     to={"/" + data.to}
                   >
                     <data.Icon />

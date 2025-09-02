@@ -7,7 +7,6 @@ import { MenuDrawer } from "./MenuDrawer";
 const styles = {
   header: `
     flex justify-between items-center
-    //border //border-red-500
     font-iranYekan-600
   `,
   linkBox: `
@@ -16,13 +15,12 @@ const styles = {
   `,
   logBox: `
     flex items-center gap-4
-    //border
   `,
 };
 
 export default function Header() {
   return (
-    <header className={"wrapper-pad"}>
+    <header className={" wrapper-pad"}>
       <div className={styles.header + " wrapper"}>
         <div className={styles.linkBox}>
           {LINKS.map((data) => {

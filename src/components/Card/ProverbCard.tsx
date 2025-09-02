@@ -40,10 +40,10 @@ export default function ProverbCard({
         <Context title="برابر پارسی" data={p_equal} />
       ) : null}
 
-      {!(typeof words[0] == "string") && (
+      {typeof words[0] == "object" && (
         <div>
           <h6>واژگان :</h6>
-          {words.map((data) => {
+          {(words as IWord[]).map((data) => {
             return (
               <div key={data.w} className="text-gray-500">
                 <div>
@@ -81,7 +81,10 @@ export default function ProverbCard({
           <h6>موضوع :</h6>
           <div className="flex items-center gap-5">
             {subjects.map((text) => (
-              <span className="block font-iranYekan-400 text-[19px] text-gray-700">
+              <span
+                key={"12" + text}
+                className="block font-iranYekan-400 text-[19px] text-gray-700"
+              >
                 {text}
               </span>
             ))}
