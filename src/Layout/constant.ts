@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 
 export const LINKS_1_500 = {
-  text: "زبانزد 1-500",
+  text: "1-500",
   to: "1-500-proverb/",
   Icon: SiPagekit,
   toList: [

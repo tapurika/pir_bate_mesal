@@ -19,7 +19,6 @@ export default function WriterSection() {
       <div className={styles.root + " wrapper"}>
         <div className={styles.text}>
           <h3 className="block text-2xl font-bold mt-10 lg:mt-0">
-            {" "}
             مختصری از گرداورنده ی کتاب:
           </h3>
           <span className="block mt-5">

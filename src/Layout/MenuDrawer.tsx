@@ -13,7 +13,7 @@ import { IoLinkSharp, IoBookmarkOutline } from "react-icons/io5";
 import { LINKS } from "./constant";
 
 export function MenuDrawer() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleClose = () => setIsOpen(false);
 
@@ -41,14 +41,14 @@ export function MenuDrawer() {
                     <AccordionTitle className="h-12 ">
                       <div className="flex items-center ">
                         <IoBookmarkOutline className="me-2" />
-                        {data.text}
+                        زبانزد {data.text}
                       </div>
                     </AccordionTitle>
                     <AccordionContent className="grid grid-cols-2">
                       {data.toList.map((text) => (
                         <Link
                           key={text}
-                          className="flex item-center gap-2.5 //w-36"
+                          className="flex item-center gap-2.5 dark:text-gray-400"
                           to={"/" + data.to + text}
                         >
                           <data.Icon />
@@ -60,7 +60,7 @@ export function MenuDrawer() {
                 ) : (
                   <Link
                     key={data.text}
-                    className="flex item-center gap-2.5 py-3 ps-5 //w-36"
+                    className="flex item-center gap-2.5 py-3 ps-5 dark:text-gray-400 "
                     to={"/" + data.to}
                   >
                     <data.Icon />

@@ -28,7 +28,7 @@ export default function ProverbCard({
         data={proverb}
         cls={{
           title: " font-iranYekan-700 text-green-600 !text-[23px] ",
-          data: " !mt-2.5 text-[21px] ",
+          data: " !mt-2.5 text-[21px] text-shadow-sm ",
         }}
       />
       {isExisted(mean) ? <Context title="معنی" data={mean} /> : null}

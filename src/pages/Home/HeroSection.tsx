@@ -6,12 +6,14 @@ const styles = {
     flex flex-col justify-center items-center
     lg:flex-row lg:justify-between  lg:items-start
     pt-14 lg:pt-30
+
+    border-t-2 border-t-green-500 mt-8
   `,
   rSection: `
-    lg:w-3/6
+    lg:w-3/6 
   `,
   img: `
-    w-96
+    w-96 shadow-2xl rounded-2xl
   `,
   lSection: `
     lg:w-3/6

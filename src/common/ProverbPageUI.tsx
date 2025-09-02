@@ -3,9 +3,9 @@ import ProverbCard from "@/components/Card/ProverbCard";
 const styles = {
   root: `
     wrapper
-    flex flex-col gap-20
-    mt-10 pt-20 font-iranYekan-600
-    border-t-2 border-t-green-600 
+    flex flex-col gap-12 lg:gap-20
+    mt-8 pt-20 font-iranYekan-600
+    border-t-2 border-t-green-500 
   `,
 };
 
