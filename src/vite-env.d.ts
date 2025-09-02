@@ -2,8 +2,6 @@
 
 declare type strOrStrArr = string | string[];
 
-declare module "path";
-
 declare interface IProverbCard {
   proverb: strOrStrArr;
   mean: strOrStrArr;
