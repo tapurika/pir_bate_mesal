@@ -15,10 +15,15 @@ export default function ProverbPageUI({
   proverbData: IProverbCard[];
 }) {
   return (
-    <div className={styles.root}>
-      {proverbData.map((data) => (
-        <ProverbCard {...data} />
-      ))}
+    <div className="wrapper-pad">
+      <div className={styles.root}>
+        {proverbData.map((data) => (
+          <ProverbCard
+            key={Array.isArray(data.proverb) ? data.proverb[0] : data.proverb}
+            {...data}
+          />
+        ))}
+      </div>
     </div>
   );
 }

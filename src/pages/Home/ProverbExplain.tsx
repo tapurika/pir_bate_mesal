@@ -5,9 +5,10 @@ const styles = {
     w-full
     mt-24 py-24
     bg-green-600
+    wrapper-pad
   `,
   wrapper: `
-    flex flex-row flex-wrap
+    flex flex-col lg:flex-row flex-wrap
     gap-9
   `,
   box: `
@@ -15,7 +16,7 @@ const styles = {
     text-white
     border border-white flex-1
     rounded-2xl
-    p-5
+    p-5 py-8
   `,
 };
 

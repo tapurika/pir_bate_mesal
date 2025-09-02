@@ -15,21 +15,23 @@ const styles = {
 
 export default function ProverbSection() {
   return (
-    <div className={styles.root + " wrapper"}>
-      <h2 className="font-iranYekan-500 text-3xl">
-        چند نمونه از
-        <strong className="text-green-600"> پیر بته مثال های </strong>
-        تپوری (مازندرانی)
-      </h2>
-      <div className={styles.cardWrapper}>
-        {PROVERB.map(({ irony, mean, proverb }) => (
-          <ProverbCard
-            key={proverb}
-            proverb={proverb}
-            irony={irony}
-            mean={mean}
-          />
-        ))}
+    <div className="wrapper-pad">
+      <div className={styles.root + " wrapper"}>
+        <h2 className="font-iranYekan-500 text-3xl leading-12">
+          چند نمونه از
+          <strong className="text-green-600"> پیر بته مثال </strong> های تپوری
+          (مازندرانی)
+        </h2>
+        <div className={styles.cardWrapper}>
+          {PROVERB.map(({ irony, mean, proverb }) => (
+            <ProverbCard
+              key={proverb}
+              proverb={proverb}
+              irony={irony}
+              mean={mean}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

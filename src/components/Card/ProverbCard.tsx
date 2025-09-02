@@ -17,9 +17,10 @@ export default function ProverbCard({
       className={`
       flex flex-col gap-6
       border-r-4 border-r-green-500
-      pr-8 py-2.5
+      pr-8 py-8
       [&>div>h6]:text-[19px]
       [&>div>div]:mt-[5px]
+      shadow-lg inset-shadow-xs rounded-2xl
     `}
     >
       <Context

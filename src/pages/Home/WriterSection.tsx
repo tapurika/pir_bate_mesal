@@ -1,7 +1,8 @@
 const styles = {
   root: `
-    w-4/5
-    flex justify-between items-center
+    lg:w-4/5
+    flex flex-col-reverse lg:flex-row
+    justify-between items-center
     mx-auto
 
     mt-32
@@ -14,10 +15,10 @@ const styles = {
 
 export default function WriterSection() {
   return (
-    <div>
+    <div className="wrapper-pad">
       <div className={styles.root + " wrapper"}>
         <div className={styles.text}>
-          <h3 className="block text-2xl font-bold">
+          <h3 className="block text-2xl font-bold mt-10 lg:mt-0">
             {" "}
             مختصری از گرداورنده ی کتاب:
           </h3>
@@ -27,8 +28,8 @@ export default function WriterSection() {
           </span>
           <p>
             بنده گفته های پدر عزیزم را یادداشت کردم و بعضی از این ضرب المثل ها
-            نیز در تحقیقات میدانی به اقصی نقاط مازندران زیبا داشتم از فرمایشات
-            بزرگان یادداشت کردم.
+            نیز در تحقیقات میدانی که به اقصی نقاط مازندران زیبا داشتم از
+            فرمایشات بزرگان یادداشت کردم.
           </p>
         </div>
         <div className="overflow-hidden rounded-full relative w-[250px] min-w-[250px] h-[250px]">
