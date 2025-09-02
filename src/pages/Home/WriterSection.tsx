@@ -35,7 +35,7 @@ export default function WriterSection() {
           <img
             // className="w-2xs"
             className="absolute top-[-70px] left-0"
-            src="/images/writer-1.jpg"
+            src="/pir_bate_mesal/images/writer-1.jpg"
             alt="غلام حسین باقری آلاشتی سوادکوهی"
           />
         </div>

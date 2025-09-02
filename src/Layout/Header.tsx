@@ -43,7 +43,7 @@ export default function Header() {
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
           <img
-            src="/images/oldman-header.png"
+            src="/pir_bate_mesal/images/oldman-header.png"
             alt="پیربته مثال"
             style={{
               width: 75,

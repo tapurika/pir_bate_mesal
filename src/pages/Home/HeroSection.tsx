@@ -26,7 +26,11 @@ export default function HeroSection() {
     <div className="wrapper-pad">
       <div className={styles.root + " wrapper"}>
         <section className={styles.rSection}>
-          <img src="/images/tabari.jpg" alt="" className={styles.img} />
+          <img
+            src="/pir_bate_mesal/images/tabari.jpg"
+            alt=""
+            className={styles.img}
+          />
         </section>
         <section className={styles.lSection}>
           <h1
