@@ -1,5 +1,6 @@
-import React from "react";
+import ProverbPageUI from "@/common/ProverbPageUI";
+import dataJSON from "@/sources/101-200/21-40.json";
 
 export default function Proverb_121_140() {
-  return <div>1_20</div>;
+  return <ProverbPageUI proverbData={dataJSON as IProverbCard[]} />;
 }
