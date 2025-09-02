@@ -21,5 +21,5 @@ export default defineConfig({
     },
   },
   // It will be a our domain
-  // base: "/pir_bate_mesal",
+  base: "/pir_bate_mesal/",
 });
