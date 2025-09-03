@@ -1,6 +1,6 @@
 import ProverbPageUI from "@/common/ProverbPageUI";
 import dataJSON from "@/sources/901-1000/21-40.json";
 
-export default function Proverb_121_140() {
+export default function Proverb_921_940() {
   return <ProverbPageUI proverbData={dataJSON as IProverbCard[]} />;
 }
