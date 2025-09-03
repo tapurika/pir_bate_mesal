@@ -16,7 +16,7 @@ const styles = {
   `,
 };
 
-export default function ProverbPage_1() {
+export default function ProverbPage_501() {
   return (
     <div className={styles.root + " wrapper "}>
       <h3 className={styles.title}>

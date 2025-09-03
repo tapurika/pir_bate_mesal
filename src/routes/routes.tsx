@@ -1,5 +1,6 @@
 import HomePage from "@/pages/Home";
 import PROVERB_1_500_ROUTES from "./1_500_proverb";
+import PROVERB_501_1000_ROUTES from "./501_1000_proverb";
 
 interface IRoutes {
   index?: boolean;
@@ -15,7 +16,7 @@ const ROUTES: IRoutes[] = [
     path: "",
   },
   PROVERB_1_500_ROUTES,
-
+  PROVERB_501_1000_ROUTES,
   // introduction 501-1000
   {
     Element: HomePage,
