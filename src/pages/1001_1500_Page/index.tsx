@@ -1,4 +1,4 @@
-import { LINKS_501_1000 } from "@/Layout/constant";
+import { LINKS_1001_1500 } from "@/Layout/constant";
 import { CiLink } from "react-icons/ci";
 import { Link } from "react-router";
 
@@ -16,7 +16,7 @@ const styles = {
   `,
 };
 
-export default function ProverbPage_501() {
+export default function ProverbPage_1001() {
   return (
     <div className={styles.root + " wrapper "}>
       <h3 className={styles.title}>
@@ -28,12 +28,12 @@ export default function ProverbPage_501() {
         از 1001 تا 1500{" "}
       </h3>
       <div className={styles.textBox}>
-        {LINKS_501_1000.toList.map((to) => {
+        {LINKS_1001_1500.toList.map((to) => {
           return (
             <Link
               className="flex items-center gap-3"
               key={to}
-              to={"/" + LINKS_501_1000.to + to}
+              to={"/" + LINKS_1001_1500.to + to}
             >
               <CiLink />
               <span>{to}</span>

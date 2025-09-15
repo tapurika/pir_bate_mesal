@@ -125,6 +125,7 @@ export const LINKS: ILinks[] = [
   },
   LINKS_1_500,
   LINKS_501_1000,
+  LINKS_1001_1500,
   {
     text: "1001-1500",
     to: "1001-1500-proverb/",
