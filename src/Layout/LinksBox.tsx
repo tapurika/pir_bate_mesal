@@ -12,12 +12,14 @@ export default function LinksBox({
   preLink: string;
   content: string[];
 }) {
+  // console.log(location.href);
+
   return (
     <Popover
       aria-labelledby="default-popover"
       content={
         css ? null : (
-          <div className="w-[380px] h-[500px] flex flex-col flex-wrap gap-6 py-6 pt-5 px-5">
+          <div className="w-[440px] h-[500px] flex flex-col flex-wrap gap-6 py-6 pt-5 px-5">
             {content.map((text) => (
               <Link key={text} to={preLink + text}>
                 مثل- {text}
