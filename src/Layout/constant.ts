@@ -114,6 +114,12 @@ export const LINKS_1001_1500 = {
     "1361-1360",
     "1341-1380",
     "1381-1400",
+
+    "1401-1420",
+    "1421-1440",
+    "1461-1460",
+    "1441-1480",
+    "1481-1500",
   ],
 };
 
@@ -127,19 +133,19 @@ export const LINKS: ILinks[] = [
   LINKS_501_1000,
   LINKS_1001_1500,
   {
-    text: "1001-1500",
-    to: "1001-1500-proverb/",
-    css: "text-gray-400 cursor-context-menu ",
-    Icon: SiPagekit,
-    toList: [],
-  },
-  {
     text: "1501-2000",
     to: "1501-2000-proverb/",
     css: "text-gray-400 cursor-context-menu ",
     Icon: SiPagekit,
     toList: [],
   },
+  // {
+  //   text: "2001-2500",
+  //   to: "2001-2500-proverb/",
+  //   css: "text-gray-400 cursor-context-menu ",
+  //   Icon: SiPagekit,
+  //   toList: [],
+  // },
   {
     text: "نویسنده",
     to: "writer",

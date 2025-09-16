@@ -29,11 +29,11 @@ import ProverbPage_1361_1380 from "@/pages/1001_1500_Page/1301_1400/1361_1380";
 import ProverbPage_1381_1400 from "@/pages/1001_1500_Page/1301_1400/1381_1400";
 
 // 1401 - 1500
-import ProverbPage_1401_1420 from "@/pages/1001_1500_Page/1401_1500/1401_1420";
-import ProverbPage_1421_1440 from "@/pages/1001_1500_Page/1401_1500/1421_1440";
-import ProverbPage_1441_1460 from "@/pages/1001_1500_Page/1401_1500/1441_1460";
-import ProverbPage_1461_1480 from "@/pages/1001_1500_Page/1401_1500/1461_1480";
-import ProverbPage_1481_1500 from "@/pages/1001_1500_Page/1401_1500/1481_1500";
+// import ProverbPage_1401_1420 from "@/pages/1001_1500_Page/1401_1500/1401_1420";
+// import ProverbPage_1421_1440 from "@/pages/1001_1500_Page/1401_1500/1421_1440";
+// import ProverbPage_1441_1460 from "@/pages/1001_1500_Page/1401_1500/1441_1460";
+// import ProverbPage_1461_1480 from "@/pages/1001_1500_Page/1401_1500/1461_1480";
+// import ProverbPage_1481_1500 from "@/pages/1001_1500_Page/1401_1500/1481_1500";
 
 const PROVERB_1_500_ROUTES =
   // introduction 1-500
@@ -74,13 +74,6 @@ const PROVERB_1_500_ROUTES =
       { Element: ProverbPage_1341_1360, path: "1341-1360" },
       { Element: ProverbPage_1361_1380, path: "1361-1380" },
       { Element: ProverbPage_1381_1400, path: "1381-1400" },
-
-      // 1401 - 1500 proverb
-      { Element: ProverbPage_1401_1420, path: "1401-1420" },
-      { Element: ProverbPage_1421_1440, path: "1421-1440" },
-      { Element: ProverbPage_1441_1460, path: "1441-1460" },
-      { Element: ProverbPage_1461_1480, path: "1461-1480" },
-      { Element: ProverbPage_1481_1500, path: "1481-1500" },
     ],
   };
 
