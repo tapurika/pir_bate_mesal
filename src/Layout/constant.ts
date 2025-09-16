@@ -152,13 +152,7 @@ export const LINKS: ILinks[] = [
   LINKS_501_1000,
   LINKS_1001_1500,
   LINKS_1501_2000,
-  {
-    text: "1501-2000",
-    to: "1501-2000-proverb/",
-    css: "text-gray-400 cursor-context-menu ",
-    Icon: SiPagekit,
-    toList: [],
-  },
+
   // {
   //   text: "2001-2500",
   //   to: "2001-2500-proverb/",
