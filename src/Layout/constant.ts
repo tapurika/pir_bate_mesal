@@ -88,7 +88,7 @@ export const LINKS_501_1000 = {
 
 export const LINKS_1001_1500 = {
   text: "1001-1500",
-  to: "501-1000-proverb/",
+  to: "1001-1500-proverb/",
   Icon: SiPagekit,
   toList: [
     "1001-1020",
@@ -123,6 +123,25 @@ export const LINKS_1001_1500 = {
   ],
 };
 
+export const LINKS_1501_2000 = {
+  text: "1501-2000",
+  to: "1501-2000-proverb/",
+  Icon: SiPagekit,
+  toList: [
+    "1501-1520",
+    "1521-1540",
+    "1561-1560",
+    "1541-1580",
+    "1581-1600",
+
+    "1601-1620",
+    "1621-1640",
+    "1661-1660",
+    "1641-1680",
+    "1681-1700",
+  ],
+};
+
 export const LINKS: ILinks[] = [
   {
     text: "خانه",
@@ -132,6 +151,7 @@ export const LINKS: ILinks[] = [
   LINKS_1_500,
   LINKS_501_1000,
   LINKS_1001_1500,
+  LINKS_1501_2000,
   {
     text: "1501-2000",
     to: "1501-2000-proverb/",
