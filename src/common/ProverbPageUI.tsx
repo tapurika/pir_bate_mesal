@@ -1,4 +1,5 @@
 import ProverbCard from "@/components/Card/ProverbCard";
+import { getNUMfromPathname } from "@/utils";
 
 const styles = {
   root: `
@@ -14,12 +15,16 @@ export default function ProverbPageUI({
 }: {
   proverbData: IProverbCard[];
 }) {
+  // const link = window.location.pathname;
+
   return (
     <div className="wrapper-pad">
       <div className={styles.root}>
-        {proverbData.map((data) => (
+        {proverbData.map((data, i) => (
           <ProverbCard
             key={Array.isArray(data.proverb) ? data.proverb[0] : data.proverb}
+            // link={link}
+            count={getNUMfromPathname() + i}
             {...data}
           />
         ))}

@@ -9,12 +9,12 @@ export default function Context({
     title?: string;
     data?: string;
   };
-  title: string;
+  title: string | React.ReactNode;
   data: strOrStrArr;
 }) {
   return (
     <div>
-      <h6 className={cls?.title}>{title} :</h6>
+      <h6 className={cls?.title}>{title}</h6>
       <TextBox className={cls?.data} text={data} />
     </div>
   );

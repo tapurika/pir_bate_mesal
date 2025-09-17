@@ -1,8 +1,10 @@
 import { isExisted } from "@/utils";
 import Context from "@/components/Text/Context";
 import TextBox from "@/components/Text/TextBox";
+// import CopyTextHook from "@/hooks";
 
 export default function ProverbCard({
+  // link,
   proverb,
   mean,
   irony,
@@ -11,9 +13,12 @@ export default function ProverbCard({
   words,
   reference,
   subjects,
-}: IProverbCard) {
+  count,
+}: IProverbCard & { count: number; link?: string }) {
+  // const { isCopy, copyText } = CopyTextHook();
   return (
     <section
+      id={"" + count}
       className={`
       flex flex-col gap-6
       border-r-4 border-r-green-500
@@ -24,7 +29,19 @@ export default function ProverbCard({
     `}
     >
       <Context
-        title="پیر بته مثال"
+        title={
+          <div>
+            پیر بته مثال <strong className="text-[19px]"> ({count}) </strong>{" "}
+            {/* <span
+              onClick={() => {
+                copyText(link + "#" + count);
+              }}
+            >
+              {isCopy ? "کپی شد 👍" : "کپی لینک 🔗"}
+            </span> */}
+            :
+          </div>
+        }
         data={proverb}
         cls={{
           title: " font-iranYekan-700 text-green-600 !text-[23px] ",
@@ -39,7 +56,6 @@ export default function ProverbCard({
       {isExisted(p_equal) ? (
         <Context title="برابر پارسی" data={p_equal} />
       ) : null}
-
       {typeof words[0] == "object" && (
         <div>
           <h6>واژگان :</h6>
@@ -58,7 +74,6 @@ export default function ProverbCard({
           })}
         </div>
       )}
-
       {isExisted(reference.writer) || isExisted(reference.book) ? (
         <div>
           {isExisted(reference.writer) && (
@@ -75,7 +90,6 @@ export default function ProverbCard({
           )}
         </div>
       ) : null}
-
       {isExisted(subjects) && (
         <div className="">
           <h6>موضوع :</h6>

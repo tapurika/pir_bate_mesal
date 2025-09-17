@@ -35,7 +35,7 @@ import ProverbPage_1441_1460 from "@/pages/1001_1500_Page/1401_1500/1441_1460";
 import ProverbPage_1461_1480 from "@/pages/1001_1500_Page/1401_1500/1461_1480";
 import ProverbPage_1481_1500 from "@/pages/1001_1500_Page/1401_1500/1481_1500";
 
-const PROVERB_1_500_ROUTES =
+const PROVERB_1001_1500_ROUTES =
   // introduction 1-500
   {
     path: "501-1000-proverb",
@@ -84,4 +84,4 @@ const PROVERB_1_500_ROUTES =
     ],
   };
 
-export default PROVERB_1_500_ROUTES;
+export default PROVERB_1001_1500_ROUTES;

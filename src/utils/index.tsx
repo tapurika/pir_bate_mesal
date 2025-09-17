@@ -3,3 +3,8 @@ export function isExisted(data: strOrStrArr | undefined) {
 
   return !(isEmpty || data === undefined || data === null);
 }
+
+export function getNUMfromPathname() {
+  // sample: http://localhost:5173/pir_bate_mesal/1501-2000-proverb/1721-1740
+  return Number(window.location.pathname.split("/")[3].split("-")[0]);
+}
