@@ -14,6 +14,20 @@ import ProverbPage_1641_1660 from "@/pages/1501_2000_Page/1601_1700/1641_1660";
 import ProverbPage_1661_1680 from "@/pages/1501_2000_Page/1601_1700/1661_1680";
 import ProverbPage_1681_1700 from "@/pages/1501_2000_Page/1601_1700/1681_1700";
 
+// 1501 - 1600
+import ProverbPage_1711_1720 from "@/pages/1501_2000_Page/1701_1800/1701_1720";
+import ProverbPage_1721_1740 from "@/pages/1501_2000_Page/1701_1800/1721_1740";
+import ProverbPage_1741_1760 from "@/pages/1501_2000_Page/1701_1800/1741_1760";
+import ProverbPage_1761_1780 from "@/pages/1501_2000_Page/1701_1800/1761_1780";
+import ProverbPage_1781_1800 from "@/pages/1501_2000_Page/1701_1800/1781_1800";
+
+// 1501 - 1600
+import ProverbPage_1811_1820 from "@/pages/1501_2000_Page/1801_1900/1801_1820";
+import ProverbPage_1821_1840 from "@/pages/1501_2000_Page/1801_1900/1821_1840";
+import ProverbPage_1841_1860 from "@/pages/1501_2000_Page/1801_1900/1841_1860";
+import ProverbPage_1861_1880 from "@/pages/1501_2000_Page/1801_1900/1861_1880";
+import ProverbPage_1881_1900 from "@/pages/1501_2000_Page/1801_1900/1881_1900";
+
 const PROVERB_1_500_ROUTES =
   // introduction 1-500
   {
@@ -39,6 +53,20 @@ const PROVERB_1_500_ROUTES =
       { Element: ProverbPage_1641_1660, path: "1641-1660" },
       { Element: ProverbPage_1661_1680, path: "1661-1680" },
       { Element: ProverbPage_1681_1700, path: "1681-1700" },
+
+      // 1701 - 1800 proverb
+      { Element: ProverbPage_1711_1720, path: "1701-1720" },
+      { Element: ProverbPage_1721_1740, path: "1721-1740" },
+      { Element: ProverbPage_1741_1760, path: "1741-1760" },
+      { Element: ProverbPage_1761_1780, path: "1761-1780" },
+      { Element: ProverbPage_1781_1800, path: "1781-1800" },
+
+      // 1801 - 1900 proverb
+      { Element: ProverbPage_1811_1820, path: "1801-1820" },
+      { Element: ProverbPage_1821_1840, path: "1821-1840" },
+      { Element: ProverbPage_1841_1860, path: "1841-1860" },
+      { Element: ProverbPage_1861_1880, path: "1861-1880" },
+      { Element: ProverbPage_1881_1900, path: "1881-1900" },
     ],
   };
 
