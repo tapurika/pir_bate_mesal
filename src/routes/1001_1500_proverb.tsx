@@ -38,7 +38,7 @@ import ProverbPage_1481_1500 from "@/pages/1001_1500_Page/1401_1500/1481_1500";
 const PROVERB_1001_1500_ROUTES =
   // introduction 1-500
   {
-    path: "501-1000-proverb",
+    path: "1001-1500-proverb",
     subRoute: [
       // introduction 1001 - 1500 proverb
       {
