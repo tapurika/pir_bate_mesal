@@ -8,28 +8,34 @@ import path from "path"; // Import the path module
 import flowbiteReact from "flowbite-react/plugin/vite";
 
 // https://vite.dev/config/
-export default defineConfig(() =>
+export default defineConfig(() => {
   // { command }
-  {
-    const config = {
-      plugins: [
-        react(), // reactRouter(), tsconfigPaths()
-        tailwindcss(),
-        flowbiteReact(),
-      ],
-      resolve: {
-        alias: {
-          "@": path.resolve(__dirname, "./src"), // '@' now represents the 'src' directory
-          // Add more aliases as needed, e.g., '@components': path.resolve(__dirname, './src/components')
-        },
+  const config = {
+    plugins: [
+      react(), // reactRouter(), tsconfigPaths()
+      tailwindcss(),
+      flowbiteReact(),
+    ],
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "./src"), // '@' now represents the 'src' directory
+        // Add more aliases as needed, e.g., '@components': path.resolve(__dirname, './src/components')
       },
-      // It will be a our domain
-      base: "/pir_bate_mesal/",
-    };
+    },
+    // It will be a our domain
+    base: "/pir_bate_mesal",
+    //  build: {
+    //  rollupVersion: {
+    //      input: {
+    //        main: resolve(__dirname, "index.html"),
+    //        404: resolve(__dirname, "public/404.html"),
+    //      },
+    //  },
+    //  },
+  };
 
-    //  if (command !== "serve") {
-    //    config.base = "/my-vite-react-app/";
-    //  }
-    return config;
-  }
-);
+  //  if (command !== "serve") {
+  //    config.base = "/my-vite-react-app/";
+  //  }
+  return config;
+});

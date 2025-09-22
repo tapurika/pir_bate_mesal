@@ -3,6 +3,7 @@ import PROVERB_1_500_ROUTES from "./1_500_proverb";
 import PROVERB_501_1000_ROUTES from "./501_1000_proverb";
 import PROVERB_1001_1500_ROUTES from "./1001_1500_proverb";
 import PROVERB_1501_2000_ROUTES from "./1501_2000_proverb";
+import WriterPage from "@/pages/Writer";
 
 interface IRoutes {
   index?: boolean;
@@ -22,15 +23,7 @@ const ROUTES: IRoutes[] = [
   PROVERB_1001_1500_ROUTES,
   PROVERB_1501_2000_ROUTES,
   {
-    Element: HomePage,
-    path: "",
-  },
-  {
-    Element: HomePage,
-    path: "",
-  },
-  {
-    Element: HomePage,
+    Element: WriterPage,
     path: "writer",
   },
   {
