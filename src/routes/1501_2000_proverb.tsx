@@ -30,6 +30,9 @@ import ProverbPage_1881_1900 from "@/pages/1501_2000_Page/1801_1900/1881_1900";
 
 // 1901 - 2000
 import ProverbPage_1901_1920 from "@/pages/1501_2000_Page/1901_2000/1901_1920";
+import ProverbPage_1921_1940 from "@/pages/1501_2000_Page/1901_2000/1921_1940";
+import ProverbPage_1941_1960 from "@/pages/1501_2000_Page/1901_2000/1941_1960";
+import ProverbPage_1961_1980 from "@/pages/1501_2000_Page/1901_2000/1961_1980";
 
 const PROVERB_1501_2000_ROUTES =
   // introduction 1-500
@@ -73,6 +76,9 @@ const PROVERB_1501_2000_ROUTES =
 
       // 1901 - 2000 proverb
       { Element: ProverbPage_1901_1920, path: "1901-1920" },
+      { Element: ProverbPage_1921_1940, path: "1921-1940" },
+      { Element: ProverbPage_1941_1960, path: "1941-1960" },
+      { Element: ProverbPage_1961_1980, path: "1961-1980" },
     ],
   };
 
