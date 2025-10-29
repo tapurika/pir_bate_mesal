@@ -1,16 +1,16 @@
-import { Outlet } from "react-router";
+import * as React from "react";
 
 import Header from "./Header";
 import Footer from "./Footer";
 
 const styles = {
   root: `
-    //border //border-red-600
-    pt-3
+     pt-3
   `,
 };
 
-export default function Layout() {
+// const Layout: React.FC<PageProps & { pageTitle?: string }> = ({
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div
       className={styles.root}
@@ -19,10 +19,10 @@ export default function Layout() {
       }}
     >
       <Header />
-      <main>
-        <Outlet />
-      </main>
+      <main>{children}</main>
       <Footer />
     </div>
   );
-}
+};
+
+export default Layout;

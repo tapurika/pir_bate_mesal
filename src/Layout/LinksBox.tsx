@@ -1,5 +1,6 @@
+import * as React from "react";
+import { Link } from "gatsby";
 import { Popover } from "flowbite-react";
-import { Link } from "react-router";
 
 export default function LinksBox({
   text,
@@ -12,8 +13,6 @@ export default function LinksBox({
   preLink: string;
   content: string[];
 }) {
-  // console.log(location.href);
-
   return (
     <Popover
       aria-labelledby="default-popover"
@@ -21,7 +20,7 @@ export default function LinksBox({
         css ? null : (
           <div className="w-[440px] h-[500px] flex flex-col flex-wrap gap-6 py-6 pt-5 px-5">
             {content.map((text) => (
-              <Link key={text} to={preLink + text}>
+              <Link key={text} to={"/" + preLink + text + "/"}>
                 مثل- {text}
               </Link>
             ))}

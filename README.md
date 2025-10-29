@@ -1,19 +1,49 @@
-<div dir="rtl" lang="fa" >
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Minimal TypeScript Starter
+</h1>
 
-# پیر بته مثال ( به زبان مازندرانی / طبری )
+## 🚀 Quick start
 
-گرد آوردنده : جناب غلامحسین باقری آلاشتی
+1.  **Create a Gatsby site.**
 
-برنامه نویس: محمد برزگر
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
-در ابن کتال آنلاین پیر بته مثال به زبان طبری (تپوری ، مازندرانی) نزدیک به 2000 زبانزد مازندرانی جمع آوری شده است که حاصل زحمات یک دهه زحمات جناب غلامحسین باقری آلاشتی می باشد.
-این گنیچه ی زبانزد طبری میتواند در زندگی روزمره، فیلم ، سریال ، آموزش زبان ، فرهنگ واژگان ، سبک بیان طبری (مازندرانی) کاربرد داشته باشد .
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby -- -ts
+    ```
 
-<br />
+2.  **Start developing.**
 
-## لینک کتاب آنلاین پیر بته مثال
+    Navigate into your new site’s directory and start it up.
 
-لینک سایت پیر بته مثال :  
-[https://tapurika.github.io/pir_bate_mesal/](hhttps://tapurika.github.io/pir_bate_mesal/)
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-</div>
+3.  **Open the code and start customizing!**
+
+    Your site is now running at http://localhost:8000!
+
+    Edit `src/pages/index.tsx` to see your site update in real-time!
+
+4.  **Learn more**
+
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+
+## 🚀 Quick start (Netlify)
+
+Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)

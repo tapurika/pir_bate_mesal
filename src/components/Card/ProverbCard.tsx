@@ -1,6 +1,8 @@
-import { isExisted } from "@/utils";
-import Context from "@/components/Text/Context";
-import TextBox from "@/components/Text/TextBox";
+import * as React from "react";
+
+import { isExisted } from "../../utils";
+import Context from "../../components/Text/Context";
+import TextBox from "../../components/Text/TextBox";
 // import CopyTextHook from "@/hooks";
 
 export default function ProverbCard({

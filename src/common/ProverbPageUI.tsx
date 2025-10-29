@@ -1,5 +1,7 @@
-import ProverbCard from "@/components/Card/ProverbCard";
-import { getNUMfromPathname } from "@/utils";
+import * as React from "react";
+
+import ProverbCard from "../components/Card/ProverbCard";
+import { getNUMfromPathname } from "../utils";
 
 const styles = {
   root: `

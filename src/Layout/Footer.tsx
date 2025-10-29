@@ -1,10 +1,12 @@
-import React from "react";
-import { LINKS } from "./constant";
-import { Link } from "react-router";
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 import { SiTelegram } from "react-icons/si";
+
+import { LINKS } from "./constant";
 
 const styles = {
   root: `
@@ -28,8 +30,8 @@ export default function Footer() {
       <div className={styles.root + " wrapper"}>
         <div>
           <div className="flex gap-6 items-center ">
-            <img
-              src="/pir_bate_mesal/images/tapurika-vajek.jpg"
+            <StaticImage
+              src="../images/tapurika-vajek.jpg"
               className="w-[130px]"
               alt="تپوریکا"
             />
@@ -50,7 +52,7 @@ export default function Footer() {
               return (
                 <Link
                   className="flex items-center gap-2.5"
-                  to={data.to}
+                  to={"/" + data.to}
                   key={data.to}
                 >
                   <FaLink size={20} />

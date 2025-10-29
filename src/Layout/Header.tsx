@@ -1,4 +1,6 @@
-import { Link } from "react-router";
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { LINKS } from "./constant";
 import LinksBox from "./LinksBox";
@@ -27,7 +29,7 @@ export default function Header() {
             return data.toList ? (
               <LinksBox
                 key={data.to}
-                text={"زبانزد " + data.text}
+                text={data.text}
                 preLink={data.to}
                 content={data.toList}
                 css={data?.css}
@@ -42,9 +44,9 @@ export default function Header() {
         <MenuDrawer />
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
-          <img
-            src="/pir_bate_mesal/images/oldman-header.png"
-            alt="پیربته مثال"
+          <StaticImage
+            src="../images/oldman-header.png"
+            alt="پیر بته مثال"
             style={{
               width: 75,
               height: 75,
