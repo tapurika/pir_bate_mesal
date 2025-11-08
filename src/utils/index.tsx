@@ -9,5 +9,5 @@ export function getNUMfromPathname() {
   return typeof window !== `undefined`
     ? Number(window.location.pathname.split("/")[3].split("-")[0])
     : null;
-  // return Number(window.location.pathname.split("/")[2].split("-")[0]);
+  // return Number(window.location.pathname.split("/")[2].split("-")[0])
 }
