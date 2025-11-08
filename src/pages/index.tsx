@@ -14,7 +14,7 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export const Head: HeadFC = () => (
   <>
-    <title>Home Page</title>
+    <title>Home Page </title>
     <meta name="description" content="Your description" />
   </>
 );
