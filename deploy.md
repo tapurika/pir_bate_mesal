@@ -5,3 +5,7 @@
 git commit -am 'ssss'
 git push
 npm run deploy
+
+## Tutorial for deploying
+
+- https://www.youtube.com/watch?v=8tz9zDmrEbA
