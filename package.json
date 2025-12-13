@@ -9,7 +9,7 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "cross-env NODE_OPTIONS=--max-old-space-size=8192 gatsby develop",
+    "develop": "cross-env NODE_OPTIONS=--max-old-space-size=16384 gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
