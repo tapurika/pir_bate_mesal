@@ -15,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "cross-env NODE_OPTIONS=--max-old-space-size=16384 gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.14",
