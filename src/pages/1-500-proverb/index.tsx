@@ -1,11 +1,10 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import type { HeadFC } from "gatsby";
+import { CiLink } from "react-icons/ci";
 
 import Layout from "../../Layout";
 import { LINKS_1_500 } from "../../Layout/constant";
-
-import { CiLink } from "react-icons/ci";
-import { Link } from "gatsby";
 
 const styles = {
   root: `
