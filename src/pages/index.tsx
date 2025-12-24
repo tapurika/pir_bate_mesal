@@ -14,8 +14,11 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export const Head: HeadFC = () => (
   <>
-    <title>Home Page </title>
-    <meta name="description" content="Your description" />
+    <title>پیر بته مثال</title>
+    <meta
+      name="description"
+      content="کتاب پیر بته مثال به زبان تبری یا زبان مازندرانی نوشته شده است و همچنین همراه با ترجمه و مغهوم و کاربرد آن به فارسی برای علاقه مندان تهیه شده است"
+    />
   </>
 );
 
