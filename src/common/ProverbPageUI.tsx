@@ -26,7 +26,7 @@ export default function ProverbPageUI({
           <ProverbCard
             key={Array.isArray(data.proverb) ? data.proverb[0] : data.proverb}
             // link={link}
-            count={getNUMfromPathname() + i}
+            count={(getNUMfromPathname() ?? 0) + i}
             {...data}
           />
         ))}

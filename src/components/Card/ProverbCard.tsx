@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { isExisted } from "../../utils";
+import { getNUMfromPathname, isExisted } from "../../utils";
 import Context from "../../components/Text/Context";
 import TextBox from "../../components/Text/TextBox";
 // import CopyTextHook from "@/hooks";
@@ -18,6 +18,8 @@ export default function ProverbCard({
   count,
 }: IProverbCard & { count: number; link?: string }) {
   // const { isCopy, copyText } = CopyTextHook();
+  console.log("aaaa:", getNUMfromPathname());
+
   return (
     <section
       id={"" + count}
