@@ -1,6 +1,5 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import Link from "next/link";
+import Image from "next/image";
 
 import { LINKS } from "./constant";
 import LinksBox from "./LinksBox";
@@ -35,8 +34,12 @@ export default function Header() {
                 css={data?.css}
               />
             ) : (
-              <Link key={data.to} to={"/" + data.to}>
-                {data.text}
+              <Link
+                key={data.to}
+                href={"/" + data.to}
+                className="flex items-center gap-1.5"
+              >
+                {<data.Icon />} {data.text}
               </Link>
             );
           })}
@@ -44,13 +47,11 @@ export default function Header() {
         <MenuDrawer />
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
-          <StaticImage
-            src="../images/oldman-header.png"
+          <Image
+            src="/images/oldman-header.png"
             alt="پیر بته مثال"
-            style={{
-              width: 75,
-              height: 75,
-            }}
+            width={75}
+            height={75}
           />
         </div>{" "}
       </div>

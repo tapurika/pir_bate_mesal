@@ -14,9 +14,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div
       className={styles.root}
-      style={{
-        direction: "rtl",
-      }}
+      // style={{
+      //   direction: "rtl",
+      // }}
     >
       <Header />
       <main>{children}</main>

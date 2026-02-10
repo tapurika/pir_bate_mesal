@@ -1,8 +1,8 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { SiPagekit } from "react-icons/si";
-import { TfiWrite } from "react-icons/tfi";
-import { FaUser } from "react-icons/fa";
-import { IoShareSocialOutline } from "react-icons/io5";
+import { GoPencil } from "react-icons/go";
+// import { FaUser } from "react-icons/fa";
+// import { IoShareSocialOutline } from "react-icons/io5";
 
 interface ILinks {
   text: string;
@@ -172,15 +172,15 @@ export const LINKS_2001_2500 = {
     "2081-2100",
 
     "2101-2120",
-    // "1121-1140",
-    // "1141-1160",
-    // "1161-1180",
-    // "1181-1200",
-
-    // "1201-1220",
-    // "1221-1240",
-    // "1241-1260",
-    // "1261-1280",
+    "2101-2120",
+    "2121-2140",
+    "2141-2160",
+    "2161-2180",
+    "2181-2200",
+    "2201-2220",
+    "2221-2240",
+    "2241-2260",
+    // "2261-2280",,
     // "1281-1300",
 
     // "1301-1320",
@@ -218,11 +218,11 @@ export const LINKS: ILinks[] = [
   {
     text: "نویسنده",
     to: "writer",
-    Icon: TfiWrite,
+    Icon: GoPencil,
   },
-  {
-    text: "درباره ی ما",
-    to: "about-us",
-    Icon: FaUser,
-  },
+  // {
+  //   text: "درباره ی ما",
+  //   to: "about-us",
+  //   Icon: FaUser,
+  // },
 ];

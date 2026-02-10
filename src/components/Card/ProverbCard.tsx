@@ -1,6 +1,4 @@
-import * as React from "react";
-
-import { getNUMfromPathname, isExisted } from "../../utils";
+import { isExisted } from "../../utils";
 import Context from "../../components/Text/Context";
 import TextBox from "../../components/Text/TextBox";
 // import CopyTextHook from "@/hooks";
@@ -18,7 +16,6 @@ export default function ProverbCard({
   count,
 }: IProverbCard & { count: number; link?: string }) {
   // const { isCopy, copyText } = CopyTextHook();
-  console.log("aaaa:", getNUMfromPathname());
 
   return (
     <section
@@ -28,7 +25,7 @@ export default function ProverbCard({
       border-r-4 border-r-green-500
       pr-8 pl-6 py-8
       [&>div>h6]:text-[19px]
-      [&>div>div]:mt-[5px]
+      [&>div>div]:mt-1.25
       shadow-lg inset-shadow-xs rounded-2xl
     `}
     >

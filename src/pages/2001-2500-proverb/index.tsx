@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CiLink } from "react-icons/ci";
 
-import { LINKS_501_1000 } from "../../Layout/constant";
+import { LINKS_2001_2500 } from "../../Layout/constant";
 
 const styles = {
   root: `
@@ -17,7 +17,7 @@ const styles = {
   `,
 };
 
-export default function ProverbPage_2() {
+export default function ProverbPage_5() {
   return (
     <div className={styles.root + " wrapper "}>
       <h3 className={styles.title}>
@@ -26,15 +26,15 @@ export default function ProverbPage_2() {
           {" "}
           تپوری (طبری - مازندرانی){" "}
         </strong>
-        از 501 تا 1000{" "}
+        از 2001 تا 2500{" "}
       </h3>
       <div className={styles.textBox}>
-        {LINKS_501_1000.toList.map((to) => {
+        {LINKS_2001_2500.toList.map((to) => {
           return (
             <Link
               className="flex items-center gap-3"
               key={to}
-              href={"/" + LINKS_501_1000.to + to}
+              href={"/" + LINKS_2001_2500.to + to}
             >
               <CiLink />
               <span>{to}</span>

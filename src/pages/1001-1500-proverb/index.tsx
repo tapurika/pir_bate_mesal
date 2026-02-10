@@ -1,9 +1,7 @@
-import * as React from "react";
-
-import Layout from "../../Layout";
-import { LINKS_1001_1500 } from "../../Layout/constant";
+import Link from "next/link";
 import { CiLink } from "react-icons/ci";
-import { Link } from "gatsby";
+
+import { LINKS_1001_1500 } from "../../Layout/constant";
 
 const styles = {
   root: `
@@ -19,33 +17,31 @@ const styles = {
   `,
 };
 
-export default function ProverbPage_1001() {
+export default function ProverbPage_3() {
   return (
-    <Layout>
-      <div className={styles.root + " wrapper "}>
-        <h3 className={styles.title}>
-          فهرست زبانزد های
-          <strong className="text-green-500 font-extrabold">
-            {" "}
-            تپوری (طبری - مازندرانی){" "}
-          </strong>
-          از 1001 تا 1500{" "}
-        </h3>
-        <div className={styles.textBox}>
-          {LINKS_1001_1500.toList.map((to) => {
-            return (
-              <Link
-                className="flex items-center gap-3"
-                key={to}
-                to={"/" + LINKS_1001_1500.to + to}
-              >
-                <CiLink />
-                <span>{to}</span>
-              </Link>
-            );
-          })}
-        </div>
+    <div className={styles.root + " wrapper "}>
+      <h3 className={styles.title}>
+        فهرست زبانزد های
+        <strong className="text-green-500 font-extrabold">
+          {" "}
+          تپوری (طبری - مازندرانی){" "}
+        </strong>
+        از 1001 تا 1500{" "}
+      </h3>
+      <div className={styles.textBox}>
+        {LINKS_1001_1500.toList.map((to) => {
+          return (
+            <Link
+              className="flex items-center gap-3"
+              key={to}
+              href={"/" + LINKS_1001_1500.to + to}
+            >
+              <CiLink />
+              <span>{to}</span>
+            </Link>
+          );
+        })}
       </div>
-    </Layout>
+    </div>
   );
 }

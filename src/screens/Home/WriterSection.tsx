@@ -1,5 +1,4 @@
-import * as React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import Image from "next/image";
 
 const styles = {
   root: `
@@ -34,12 +33,16 @@ export default function WriterSection() {
             فرمایشات بزرگان یادداشت کردم.
           </p>
         </div>
-        <div className="overflow-hidden rounded-full relative w-[250px] min-w-[250px] h-[250px]">
-          <StaticImage
+        <div className="overflow-hidden rounded-full relative w-62.5 min-w-62.5 h-62.5">
+          <Image
             // className="w-2xs"
-            className="absolute top-[-70px] left-0"
-            src="../../images/writer-1.jpg"
+            className="absolute -top-17.5 left-0"
+            src="/images/writer-1.jpg"
             alt="غلام حسین باقری آلاشتی سوادکوهی"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: 384, height: "auto" }} // optional
           />
         </div>
       </div>

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { PROVERB_DETAIL } from "./constants";
 
 const styles = {

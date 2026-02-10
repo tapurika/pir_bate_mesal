@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import { useState } from "react";
 import {
   Accordion,
@@ -7,7 +5,7 @@ import {
   AccordionPanel,
   AccordionTitle,
 } from "flowbite-react";
-import { Link } from "gatsby";
+import Link from "next/link";
 import { Drawer, DrawerHeader, DrawerItems } from "flowbite-react";
 import { CgMenu } from "react-icons/cg";
 import { IoLinkSharp, IoBookmarkOutline } from "react-icons/io5";
@@ -20,7 +18,7 @@ export function MenuDrawer() {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <>
+    <div className="lg:hidden">
       <div className="lg:hidden w-fit">
         <CgMenu
           className="cursor-pointer"
@@ -36,10 +34,10 @@ export function MenuDrawer() {
         />
         <DrawerItems>
           <div className="border-t-2 border-t-gray-300 pt-5">
-            <Accordion className="!border-0">
+            <Accordion className="border-0!">
               {LINKS.map((data) =>
                 data?.toList ? (
-                  <AccordionPanel key={data.text} className="!border-0">
+                  <AccordionPanel key={data.text} className="border-0!">
                     <AccordionTitle className="h-12 ">
                       <div className="flex items-center ">
                         <IoBookmarkOutline className="me-2" />
@@ -51,7 +49,7 @@ export function MenuDrawer() {
                         <Link
                           key={text}
                           className="flex item-center gap-2.5 text-gray-500 dark:text-gray-400 "
-                          to={"/" + data.to + text}
+                          href={"/" + data.to + text}
                         >
                           <data.Icon />
                           <span>{text}</span>
@@ -63,17 +61,17 @@ export function MenuDrawer() {
                   <Link
                     key={data.text}
                     className="flex item-center gap-2.5 py-3 ps-5 text-gray-500 dark:text-gray-400 "
-                    to={"/" + data.to}
+                    href={"/" + data.to}
                   >
                     <data.Icon />
                     <span>{data.text}</span>
                   </Link>
-                )
+                ),
               )}
             </Accordion>
           </div>
         </DrawerItems>
       </Drawer>
-    </>
+    </div>
   );
 }

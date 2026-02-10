@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import TextBox from "./TextBox";
 
 export default function Context({

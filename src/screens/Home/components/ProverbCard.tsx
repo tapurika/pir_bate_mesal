@@ -1,4 +1,4 @@
-import * as React from "react";
+import Link from "next/link";
 
 const styles = {
   root: `
@@ -16,10 +16,12 @@ export default function ProverbCard({
   proverb,
   mean,
   irony,
+  to,
 }: {
   proverb: string;
   mean: string;
   irony: string;
+  to: string;
 }) {
   return (
     <div className={styles.root}>
@@ -42,7 +44,10 @@ export default function ProverbCard({
         </p>
       </div>
       <div className="mt-4 flex justify-end">
-        <a className="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-700">
+        <Link
+          className="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-600 rounded-lg hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-600 dark:focus:ring-green-700"
+          href={"/" + to}
+        >
           بیشتر بخوانید
           <svg
             className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
@@ -59,7 +64,7 @@ export default function ProverbCard({
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </Link>
       </div>
     </div>
   );

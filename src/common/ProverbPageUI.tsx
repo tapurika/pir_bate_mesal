@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import ProverbCard from "../components/Card/ProverbCard";
-import { getNUMfromPathname } from "../utils";
+// import { getNUMfromPathname } from "../utils";
 
 const styles = {
   root: `
@@ -14,8 +14,10 @@ const styles = {
 
 export default function ProverbPageUI({
   proverbData,
+  count,
 }: {
   proverbData: IProverbCard[];
+  count: number;
 }) {
   // const link = window.location.pathname;
 
@@ -26,7 +28,8 @@ export default function ProverbPageUI({
           <ProverbCard
             key={Array.isArray(data.proverb) ? data.proverb[0] : data.proverb}
             // link={link}
-            count={(getNUMfromPathname() ?? 0) + i}
+            count={(count ?? 0) + i}
+            // count={i}
             {...data}
           />
         ))}

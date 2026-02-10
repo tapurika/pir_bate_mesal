@@ -1,46 +1,29 @@
 {
-  "name": "pir_bate_mesal",
-  "version": "1.0.0",
+  "name": "ttttk",
+  "version": "0.1.0",
   "private": true,
-  "description": "",
-  "homepage": "https://tapurika.github.io/pir_bate_mesal",
-  "author": "mohammadbrzbrz72",
-  "keywords": [
-    "gatsby"
-  ],
   "scripts": {
-    "develop": "cross-env NODE_OPTIONS=--max-old-space-size=16384 gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit",
-    "deploy": "cross-env NODE_OPTIONS=--max-old-space-size=16384 gatsby build --prefix-paths && gh-pages -d public",
-    "online": "gh-pages -d public"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.14",
-    "cross-env": "^10.1.0",
-    "flowbite-react": "^0.12.9",
-    "gatsby": "^5.14.6",
-    "gatsby-plugin-google-gtag": "^5.15.0",
-    "gatsby-plugin-image": "^3.15.0",
-    "gatsby-plugin-manifest": "^5.15.0",
-    "gatsby-plugin-postcss": "^6.15.0",
-    "gatsby-plugin-sharp": "^5.15.0",
-    "gatsby-plugin-sitemap": "^6.15.0",
-    "gatsby-source-filesystem": "^5.15.0",
-    "postcss": "^8.5.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.5.0",
-    "tailwindcss": "^4.1.14"
+    "flowbite-react": "^0.12.17",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@types/node": "^20.11.19",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
-    "gh-pages": "^6.3.0",
-    "typescript": "^5.3.3"
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

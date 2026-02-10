@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import ProverbCard from "./components/ProverbCard";
 import { PROVERB } from "./constants";
 
@@ -25,12 +23,13 @@ export default function ProverbSection() {
           (مازندرانی)
         </h2>
         <div className={styles.cardWrapper}>
-          {PROVERB.map(({ irony, mean, proverb }) => (
+          {PROVERB.map(({ irony, mean, proverb, to }) => (
             <ProverbCard
               key={proverb}
               proverb={proverb}
               irony={irony}
               mean={mean}
+              to={to}
             />
           ))}
         </div>

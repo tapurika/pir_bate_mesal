@@ -1,9 +1,6 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import type { HeadFC } from "gatsby";
+import Link from "next/link";
 import { CiLink } from "react-icons/ci";
 
-import Layout from "../../Layout";
 import { LINKS_1_500 } from "../../Layout/constant";
 
 const styles = {
@@ -22,38 +19,29 @@ const styles = {
 
 export default function ProverbPage_1() {
   return (
-    <Layout>
-      <div className={styles.root + " wrapper "}>
-        <h3 className={styles.title}>
-          فهرست زبانزد های
-          <strong className="text-green-500 font-extrabold">
-            {" "}
-            تپوری (طبری - مازندرانی){" "}
-          </strong>
-          از 1001 تا 1500{" "}
-        </h3>
-        <div className={styles.textBox}>
-          {LINKS_1_500.toList.map((to) => {
-            return (
-              <Link
-                className="flex items-center gap-3"
-                key={to}
-                to={"/" + LINKS_1_500.to + to}
-              >
-                <CiLink />
-                <span>{to}</span>
-              </Link>
-            );
-          })}
-        </div>
+    <div className={styles.root + " wrapper "}>
+      <h3 className={styles.title}>
+        فهرست زبانزد های
+        <strong className="text-green-500 font-extrabold">
+          {" "}
+          تپوری (طبری - مازندرانی){" "}
+        </strong>
+        از 1 تا 500{" "}
+      </h3>
+      <div className={styles.textBox}>
+        {LINKS_1_500.toList.map((to) => {
+          return (
+            <Link
+              className="flex items-center gap-3"
+              key={to}
+              href={"/" + LINKS_1_500.to + to}
+            >
+              <CiLink />
+              <span>{to}</span>
+            </Link>
+          );
+        })}
       </div>
-    </Layout>
+    </div>
   );
 }
-
-export const Head: HeadFC = () => (
-  <>
-    <title>Home Page</title>
-    <meta name="description" content="Your description" />
-  </>
-);

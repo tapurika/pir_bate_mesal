@@ -1,7 +1,5 @@
-import * as React from "react";
-
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import Link from "next/link";
+import Image from "next/image";
 
 import ColorfulButton from "../../components/Button/ColorfulButton";
 
@@ -21,7 +19,6 @@ const styles = {
   `,
   lSection: `
     lg:w-3/6
-
   `,
 };
 
@@ -30,10 +27,14 @@ export default function HeroSection() {
     <div className="wrapper-pad">
       <div className={styles.root + " wrapper"}>
         <section className={styles.rSection}>
-          <StaticImage
-            src="../../images/tabari.jpg"
+          <Image
+            src="/images/tabari.jpg"
             alt=""
+            width={0}
+            height={0}
             className={styles.img}
+            sizes="100vw"
+            style={{ width: 384, height: "auto" }} // optional
           />
         </section>
         <section className={styles.lSection}>
@@ -76,7 +77,7 @@ export default function HeroSection() {
                 گردآوری شده و حاصل یک دهه زحمت ایشان میباشد.
               </p>
               <Link
-                to="/writer"
+                href="/writer"
                 className="block font-iranYekan-500 mt-5 w-fit text-[16px]"
               >
                 <ColorfulButton>
