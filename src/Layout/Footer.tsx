@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <div className="flex gap-6 items-center ">
             <Image
-              src=/pir_bate_mesal/images/tapurika-vajek.jpg"
+              src=/images/tapurika-vajek.jpg"
               width={130}
               height={130}
               alt="تپوریکا"

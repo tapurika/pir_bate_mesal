@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className={styles.root + " wrapper"}>
         <section className={styles.rSection}>
           <Image
-            src=/pir_bate_mesal/images/tabari.jpg"
+            src=/images/tabari.jpg"
             alt=""
             width={0}
             height={0}
