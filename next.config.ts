@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? "/pir_bate_mesal/" : "",
+  assetPrefix: isProd ? "/pir_bate_mesal" : "",
   basePath: isProd ? "/pir_bate_mesal" : "",
 };
 
