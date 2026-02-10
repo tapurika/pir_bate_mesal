@@ -44,7 +44,7 @@ export default function Header() {
             );
           })}
         </div>
-        <MenuDrawer />
+        {/* <MenuDrawer /> */}
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
           <Image
