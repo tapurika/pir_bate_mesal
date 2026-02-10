@@ -1,6 +1,6 @@
 @import "./fonts.css";
 @import "tailwindcss";
-@plugin "flowbite-react/plugin/tailwindcss";
+@import "flowbite-react/plugin/tailwindcss";
 @source "../../.flowbite-react/class-list.json";
 
 :root {

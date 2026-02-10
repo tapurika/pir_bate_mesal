@@ -1,12 +1,14 @@
 import { useState } from "react";
+import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
   AccordionPanel,
   AccordionTitle,
+  Drawer,
+  DrawerHeader,
+  DrawerItems,
 } from "flowbite-react";
-import Link from "next/link";
-import { Drawer, DrawerHeader, DrawerItems } from "flowbite-react";
 import { CgMenu } from "react-icons/cg";
 import { IoLinkSharp, IoBookmarkOutline } from "react-icons/io5";
 

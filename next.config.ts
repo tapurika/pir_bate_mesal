@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import withFlowbiteReact from "flowbite-react/plugin/nextjs";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -16,4 +17,4 @@ const nextConfig: NextConfig = {
   basePath: isProd ? "/pir_bate_mesal" : "",
 };
 
-export default nextConfig;
+export default withFlowbiteReact(nextConfig);
