@@ -1,12 +1,16 @@
 {
-  "name": "ttttk",
+  "name": "pir_bate_mesal",
   "version": "0.1.0",
+  "homepage": "https://tapurika.github.io/pir_bate_mesal",
+  "author": "mohammadbrzbrz72",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "flowbite-react": "^0.12.17",
