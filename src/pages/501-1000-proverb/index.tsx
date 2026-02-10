@@ -5,11 +5,13 @@ import { LINKS_501_1000 } from "../../Layout/constant";
 
 const styles = {
   root: `
-    mt-10 pt-14 font-iranYekan-600
+    mt-10
+    pt-14 px-5 lg:px-0
+    font-iranYekan-600
     border-t-2 border-t-green-600
-   `,
+  `,
   title: `
-    text-3xl text-gray-600
+     text-[20px] lg:text-3xl text-gray-600
   `,
   textBox: `
     flex flex-col gap-3 mt-9
@@ -19,7 +21,7 @@ const styles = {
 
 export default function ProverbPage_2() {
   return (
-    <div className={styles.root + " wrapper "}>
+    <div className={styles.root + " wrapper"}>
       <h3 className={styles.title}>
         فهرست زبانزد های
         <strong className="text-green-500 font-extrabold">
