@@ -1,4 +1,4 @@
-import Image from "next"/pir_bate_mesal/image";
+import Image from "next/image";
 
 import { TEXT } from "../constants/writer_constant";
 

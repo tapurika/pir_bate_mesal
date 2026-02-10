@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next"/pir_bate_mesal/image";
+import Image from "next/image";
 
 import { LINKS } from "./constant";
 import LinksBox from "./LinksBox";
