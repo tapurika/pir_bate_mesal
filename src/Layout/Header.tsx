@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { LINKS } from "./constant";
 import LinksBox from "./LinksBox";
-import Drawer from "./zzz";
+import MobileDrawer from "./MobileDrawer";
 
 const styles = {
   header: `
@@ -45,7 +45,7 @@ export default function Header() {
           })}
         </div>
         {/* <MenuDrawer /> */}
-        <Drawer />
+        <MobileDrawer />
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
           <Image
