@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: "export",
   // distDir: 'dist',
+  // distDir: 'dist',
   images: {
     unoptimized: true, // Disable default image optimization
   },
