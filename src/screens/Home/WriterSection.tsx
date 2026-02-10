@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next"/pir_bate_mesal/image";
 
 const styles = {
   root: `
@@ -37,7 +37,7 @@ export default function WriterSection() {
           <Image
             // className="w-2xs"
             className="absolute -top-17.5 left-0"
-            src=/images/writer-1.jpg"
+            src="/pir_bate_mesal/images/writer-1.jpg"
             alt="غلام حسین باقری آلاشتی سوادکوهی"
             width={0}
             height={0}

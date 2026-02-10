@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next"/pir_bate_mesal/image";
 
 import { TEXT } from "../constants/writer_constant";
 
@@ -25,7 +25,7 @@ export default function Writer() {
             </div>
             <div className="xl:w-1/2">
               <Image
-                src=/images/غلامحسین باقری الاشتی - 1.jpg"
+                src="/pir_bate_mesal/images/غلامحسین باقری الاشتی - 1.jpg"
                 alt="غلامحسین باقری الاشتی"
                 className="w-full rounded-xl"
                 width={0}
@@ -39,7 +39,7 @@ export default function Writer() {
           <div className="flex flex-col-reverse xl:flex-row justify-between gap-7">
             <div className="xl:w-1/2">
               <Image
-                src=/images/غلامحسین باقری الاشتی - 2.jpg"
+                src="/pir_bate_mesal/images/غلامحسین باقری الاشتی - 2.jpg"
                 alt="پدر غلامحسین باقری الاشتی"
                 className="w-full rounded-xl"
                 width={0}
@@ -62,7 +62,7 @@ export default function Writer() {
             </div>
             <div className="xl:w-1/2">
               <Image
-                src=/images/پدر غلامحسین باقری الاشتی .jpg"
+                src="/pir_bate_mesal/images/پدر غلامحسین باقری الاشتی .jpg"
                 alt="پدر غلامحسین باقری الاشتی"
                 className="w-full rounded-xl"
                 width={0}

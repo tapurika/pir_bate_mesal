@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next"/pir_bate_mesal/image";
 
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <div className="flex gap-6 items-center ">
             <Image
-              src=/images/tapurika-vajek.jpg"
+              src="/pir_bate_mesal/images/tapurika-vajek.jpg"
               width={130}
               height={130}
               alt="تپوریکا"

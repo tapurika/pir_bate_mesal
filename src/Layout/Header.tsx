@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next"/pir_bate_mesal/image";
 
 import { LINKS } from "./constant";
 import LinksBox from "./LinksBox";
@@ -48,7 +48,7 @@ export default function Header() {
         <div className={styles.logBox}>
           <span className="font-iranYekan-800 text-[20px]">پیر بته مثال</span>
           <Image
-            src=/images/oldman-header.png"
+            src="/pir_bate_mesal/images/oldman-header.png"
             alt="پیر بته مثال"
             width={75}
             height={75}

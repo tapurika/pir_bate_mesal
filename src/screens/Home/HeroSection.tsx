@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next"/pir_bate_mesal/image";
 
 import ColorfulButton from "../../components/Button/ColorfulButton";
 
@@ -28,7 +28,7 @@ export default function HeroSection() {
       <div className={styles.root + " wrapper"}>
         <section className={styles.rSection}>
           <Image
-            src=/images/tabari.jpg"
+            src="/pir_bate_mesal/images/tabari.jpg"
             alt=""
             width={0}
             height={0}
