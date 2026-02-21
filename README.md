@@ -16,7 +16,7 @@
 
 ### لینک سایت پیربته مثال
 
-[لینک سایت پیر بته مثال](https://tapurika.github.io/pir_bate_mesal)
+[https://tapurika.github.io/pir_bate_mesal](https://tapurika.github.io/pir_bate_mesal)
 
 زبانزد تبری
 زبانزد طبری
